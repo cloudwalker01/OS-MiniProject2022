@@ -1,38 +1,3 @@
-combined_code.cpp
-Details
-Activity
-combined_code.cpp
-Sharing Info.
-Who has access
-
-A
-
-p
-
-Manage access
-General Info.
-System properties
-Type
-C++
-Size
-10 KB
-Storage used
-10 KB
-Location
-
-Programs
-Owner
-Aditya Ballabh
-Modified
-Oct 22, 2022 by Aditya Ballabh
-Opened
-2:28 PM by me
-Created
-Oct 22, 2022
-Description.
-Add a description
-Download permissions.
-Viewers can download
 //compile with -DTERM flag to get output on terminal instead of files
 
 #include <iostream>
@@ -261,7 +226,8 @@ void FIFO::refer(vector<pair<int,int>>&page_table, pair<int,int>page_ref){
     }
 }
 
-int findFreeFrame(vector<pair<int,int>>page_table){ //will only be called if space is available
+int findFreeFrame(vector<pair<int,int>>page_table)
+{ //will only be called if space is available
     for(int i=0;i<page_table.size();i++)
         if(page_table[i].first==-1)
             return i;
